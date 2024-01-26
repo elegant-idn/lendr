@@ -1,0 +1,26 @@
+providers:
+  docker:
+    exposedBydefault: false
+    watch: true
+  file:
+    filename: ./traefik-dynamic-conf/traefik.dynamic.dev.yml
+
+api:
+  insecure: true
+  dashboard: true
+  debug: true
+  disabledashboardad: false
+accessLog: {}
+global:
+  checkNewVersion: true
+entryPoints:
+  web:
+    address: ":80"
+  #   http:
+  #     redirections:
+  #       entrypoint:
+  #         to: "websecure"
+  #         scheme: "https"
+  #         permanent: true
+  # websecure:
+  #   address: ":443"

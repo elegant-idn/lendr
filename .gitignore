@@ -1,0 +1,11 @@
+env/app.env
+env/db.env
+env/grafana.env
+env/influxdb.env
+env/mailhog.env
+env/pma.env
+env/worker.env
+.env
+src/storage/app
+data/mailpit
+_data/

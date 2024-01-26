@@ -1,0 +1,13 @@
+http:
+  routers:
+    weblegacy:
+      rule: "Host(`lendrapp.shop`)"
+      service: "web-code@docker"
+      entryPoints:
+        - "web"
+      priority: 1
+    dashboard:
+      rule: "Host(`lendrapp.shop`)"
+      service: api@internal
+      entryPoints:
+        - "web"
